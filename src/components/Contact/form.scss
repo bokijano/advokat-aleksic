@@ -1,0 +1,147 @@
+// contact page style
+.display-contact {
+  font-family: "Alata", sans-serif;
+  color: rgb(38, 1, 139);
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  .cont {
+    width: 34%;
+  }
+  .display-form {
+    width: 64%;
+  }
+  .display-map {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  @media screen and (max-width: 768px) {
+    flex-wrap: wrap;
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+    .cont {
+      width: 100%;
+      text-align: center;
+    }
+    .display-form,
+    .display-map {
+      width: 100%;
+    }
+  }
+}
+
+// about lawyer style
+.about {
+  display: flex;
+  flex-direction: column;
+  span {
+    margin-top: 10px;
+    font-size: 30px;
+    span {
+      padding-left: 20px;
+      padding-top: -10px;
+      font-size: 20px !important;
+    }
+  }
+}
+
+// form style
+form {
+  background: rgb(238, 237, 237);
+  border-radius: 5px;
+  font-family: "Alata", sans-serif;
+  //font-family: 'Muli', sans-serif;
+  //font-family: 'Rubik', sans-serif;
+  h3 {
+    margin-left: 4%;
+  }
+  .name,
+  .email {
+    width: 40% !important;
+    margin-left: 4%;
+    margin-right: 4%;
+    border-radius: 5px;
+    padding-left: 2px;
+    height: 10vw;
+    border: 0.1vw solid rgb(187, 185, 185);
+    font-size: 15px;
+    &:focus {
+      outline: none;
+      border: 0.2vw solid grey;
+    }
+    @media screen and (min-width: 768px) {
+      height: 5vw;
+    }
+  }
+  .message {
+    display: block;
+    width: 88% !important;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 2vw;
+    border-radius: 5px;
+    padding-left: 2px;
+    border: 0.1vw solid rgb(187, 185, 185);
+    height: 20vw;
+    font-size: 20px;
+    &:focus {
+      outline: none;
+      border: 0.2vw solid grey;
+    }
+    @media screen and (min-width: 768px) {
+      height: 10vw;
+    }
+  }
+  .btn-submit {
+    width: 35%;
+    margin-left: 4%;
+    margin-top: 2vw;
+    height: 10vw;
+    border-radius: 5px;
+    background-color: rgb(38, 1, 139);
+    color: whitesmoke;
+    font-weight: bolder;
+    cursor: pointer;
+    box-shadow: 1px 1px 2px solid dodgerblue !important;
+    font-size: 20px;
+    &:hover {
+      font-size: 22px;
+      background-color: rgb(62, 12, 201);
+    }
+    &:focus {
+      outline: none;
+    }
+    @media screen and (min-width: 768px) {
+      height: 5vw;
+    }
+  }
+}
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  width: 90%;
+  margin: 20px 5% 5% 20px;
+  //margin-left: 5%;
+  //margin-right: 5%;
+  //margin-top: 20px;
+  //margin-bottom: 20px;
+  .gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+  }
+  .map-size {
+    width: 1000px;
+    height: 400px;
+    @media screen and (max-width: 768px) {
+      width: 768px;
+      height: 300px;
+    }
+  }
+}

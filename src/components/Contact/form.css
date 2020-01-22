@@ -1,0 +1,182 @@
+.display-contact {
+  font-family: "Alata", sans-serif;
+  color: #26018b;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.display-contact .cont {
+  width: 34%;
+}
+
+.display-contact .display-form {
+  width: 64%;
+}
+
+.display-contact .display-map {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+@media screen and (max-width: 768px) {
+  .display-contact {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .display-contact .cont {
+    width: 100%;
+    text-align: center;
+  }
+  .display-contact .display-form,
+  .display-contact .display-map {
+    width: 100%;
+  }
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about span {
+  margin-top: 10px;
+  font-size: 30px;
+}
+
+.about span span {
+  padding-left: 20px;
+  padding-top: -10px;
+  font-size: 20px !important;
+}
+
+form {
+  background: #eeeded;
+  border-radius: 5px;
+  font-family: "Alata", sans-serif;
+}
+
+form h3 {
+  margin-left: 4%;
+}
+
+form .name,
+form .email {
+  width: 40% !important;
+  margin-left: 4%;
+  margin-right: 4%;
+  border-radius: 5px;
+  padding-left: 2px;
+  height: 10vw;
+  border: 0.1vw solid #bbb9b9;
+  font-size: 15px;
+}
+
+form .name:focus,
+form .email:focus {
+  outline: none;
+  border: 0.2vw solid grey;
+}
+
+@media screen and (min-width: 768px) {
+  form .name,
+  form .email {
+    height: 5vw;
+  }
+}
+
+form .message {
+  display: block;
+  width: 88% !important;
+  margin-left: 4%;
+  margin-right: 4%;
+  margin-top: 2vw;
+  border-radius: 5px;
+  padding-left: 2px;
+  border: 0.1vw solid #bbb9b9;
+  height: 20vw;
+  font-size: 20px;
+}
+
+form .message:focus {
+  outline: none;
+  border: 0.2vw solid grey;
+}
+
+@media screen and (min-width: 768px) {
+  form .message {
+    height: 10vw;
+  }
+}
+
+form .btn-submit {
+  width: 35%;
+  margin-left: 4%;
+  margin-top: 2vw;
+  height: 10vw;
+  border-radius: 5px;
+  background-color: #26018b;
+  color: whitesmoke;
+  font-weight: bolder;
+  cursor: pointer;
+  -webkit-box-shadow: 1px 1px 2px solid dodgerblue !important;
+          box-shadow: 1px 1px 2px solid dodgerblue !important;
+  font-size: 20px;
+}
+
+form .btn-submit:hover {
+  font-size: 22px;
+  background-color: #3e0cc9;
+}
+
+form .btn-submit:focus {
+  outline: none;
+}
+
+@media screen and (min-width: 768px) {
+  form .btn-submit {
+    height: 5vw;
+  }
+}
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  width: 90%;
+  margin: 20px 5% 5% 20px;
+}
+
+.mapouter .gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+}
+
+.mapouter .map-size {
+  width: 1000px;
+  height: 400px;
+}
+
+@media screen and (max-width: 768px) {
+  .mapouter .map-size {
+    width: 768px;
+    height: 300px;
+  }
+}
+/*# sourceMappingURL=form.css.map */
